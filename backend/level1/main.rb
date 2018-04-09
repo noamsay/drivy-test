@@ -16,8 +16,8 @@ cars = drivy.cars_hydration
 # hydrate rentals from input json
 rentals = drivy.rentals_hydration(cars)
 
-# create a list of rentals with price based on hydrated rentals
-drivy.rental_list_with_price(rentals)
+# create a list of rentals with price
+drivy.rental_list_with_price(rentals, 'level1')
 
 # serialize the rentals list to output json
 drivy.rentals_serialization_to_json

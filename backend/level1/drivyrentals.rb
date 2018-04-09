@@ -41,8 +41,8 @@ class DrivyRentals
     @rentals = rental_collection
   end
 
-  def rental_list_with_price(rentals)
-    @rentals_with_price = rentals.collect { |rental| { 'id' => rental.id, 'price' => rental.price } }
+  def rental_list_with_price(rentals, level)
+    @rentals_with_price = rentals.collect { |rental| { 'id' => rental.id, 'price' => rental.compute_price(level) } }
   end
 
   def rentals_serialization_to_json
