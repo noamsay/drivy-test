@@ -20,4 +20,4 @@ rentals = drivy.rentals_hydration(cars)
 drivy.rental_list_with_price(rentals, 'level2')
 
 # serialize the rentals list to output json
-drivy.rentals_serialization_to_json
+drivy.rentals_serialization_to_json('level2')
